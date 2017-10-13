@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585ECF611F8F4998001741EA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585ECF5F1F8F4998001741EA /* TableViewController.m */; };
+		585ECF621F8F4998001741EA /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585ECF601F8F4998001741EA /* TableViewController.xib */; };
+		585ECF651F8F4BC8001741EA /* UIViewController+Example.m in Sources */ = {isa = PBXBuildFile; fileRef = 585ECF641F8F4BBE001741EA /* UIViewController+Example.m */; };
 		58712D931F8E0871004EBDD8 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58712D921F8E0871004EBDD8 /* UIView+Additions.m */; };
 		58F161761F8C9CEB00040D39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F161751F8C9CEB00040D39 /* AppDelegate.m */; };
 		58F161791F8C9CEB00040D39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F161781F8C9CEB00040D39 /* ViewController.m */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585ECF5E1F8F4998001741EA /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		585ECF5F1F8F4998001741EA /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		585ECF601F8F4998001741EA /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		585ECF631F8F4BBE001741EA /* UIViewController+Example.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Example.h"; path = "ThreadSafety/UIViewController+Example.h"; sourceTree = SOURCE_ROOT; };
+		585ECF641F8F4BBE001741EA /* UIViewController+Example.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Example.m"; path = "ThreadSafety/UIViewController+Example.m"; sourceTree = SOURCE_ROOT; };
 		58712D911F8E0871004EBDD8 /* UIView+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		58712D921F8E0871004EBDD8 /* UIView+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		58F161711F8C9CEB00040D39 /* ThreadSafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadSafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +58,8 @@
 		58712D8F1F8E07F2004EBDD8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				585ECF631F8F4BBE001741EA /* UIViewController+Example.h */,
+				585ECF641F8F4BBE001741EA /* UIViewController+Example.m */,
 				58712D901F8E0830004EBDD8 /* UIView */,
 			);
 			path = Category;
@@ -95,6 +105,9 @@
 				58F1617F1F8C9CEB00040D39 /* LaunchScreen.storyboard */,
 				58F161821F8C9CEB00040D39 /* Info.plist */,
 				58F161831F8C9CEB00040D39 /* main.m */,
+				585ECF5E1F8F4998001741EA /* TableViewController.h */,
+				585ECF5F1F8F4998001741EA /* TableViewController.m */,
+				585ECF601F8F4998001741EA /* TableViewController.xib */,
 			);
 			path = ThreadSafety;
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 				58F161811F8C9CEB00040D39 /* LaunchScreen.storyboard in Resources */,
 				58F1617E1F8C9CEB00040D39 /* Assets.xcassets in Resources */,
 				58F1617C1F8C9CEB00040D39 /* Main.storyboard in Resources */,
+				585ECF621F8F4998001741EA /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585ECF651F8F4BC8001741EA /* UIViewController+Example.m in Sources */,
 				58712D931F8E0871004EBDD8 /* UIView+Additions.m in Sources */,
 				58F161791F8C9CEB00040D39 /* ViewController.m in Sources */,
 				58F161841F8C9CEB00040D39 /* main.m in Sources */,
+				585ECF611F8F4998001741EA /* TableViewController.m in Sources */,
 				58F161761F8C9CEB00040D39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

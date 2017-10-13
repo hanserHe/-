@@ -9,11 +9,14 @@
 #import "ViewController.h"
 #import "MJRefresh.h"
 #import "UIView+Additions.h"
+#import "TableViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #define scale pow(3, 0.3)
+
+
 
 static const CGFloat MJDuration = 2.0;
 
@@ -111,6 +114,13 @@ static const CGFloat MJDuration = 2.0;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewController *vc = [[TableViewController alloc] init];
+    vc.title = @"Table";
+    [vc setValue:@"testMethod" forKey:@"method"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
